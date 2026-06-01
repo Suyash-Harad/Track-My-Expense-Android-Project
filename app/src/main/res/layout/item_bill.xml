@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_margin="4dp"
+    android:background="@color/card_background">
+
+    <ImageView
+        android:id="@+id/ivBillThumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <!-- Subtle dark gradient so the delete icon is always visible over any photo -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_gravity="top"
+        android:background="@color/overlay_dark"
+        android:alpha="0.45" />
+
+    <ImageView
+        android:id="@+id/btnDelete"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="top|end"
+        android:layout_margin="4dp"
+        android:src="@android:drawable/ic_menu_delete"
+        android:tint="@color/white"
+        android:background="@color/overlay_dark"
+        android:padding="2dp" />
+
+</FrameLayout>
